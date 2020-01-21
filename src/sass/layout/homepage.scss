@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../../src/font/WorkSans-Light.otf");
+}
+
+@font-face {
+  font-family: "WorkSans-ExtraLight";
+  src: url("../../src/font/WorkSans-ExtraLight.otf");
+}
+
+body {
+  font-family: "WorkSans-ExtraLight", sans-serif;
+  a {
+    color: inherit;
+    letter-spacing: 1px;
+  }
+}
+.body-width {
+  width: 80rem;
+}
+
+h1 {
+  font-family: "Work Sans";
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.5px;
+}
