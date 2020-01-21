@@ -65,7 +65,7 @@ gulp.task('watch', function () {
     gulp.watch('src/*.html', ['copyHtml']);
     gulp.watch('src/sass/**/*.scss', ['sass']);
     //gulp.watch('node_modules/*', ['copyExternalLibraries'])
-    gulp.watch('src/img/**/*', ['copyImages']);
+    gulp.watch('src/img/*', ['copyImages']);
     gulp.watch('src/font/**/*', ['copyFonts']);
     gulp.watch('src/js/*.js', ['minify']);
 });
