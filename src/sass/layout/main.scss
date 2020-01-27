@@ -30,10 +30,20 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    h2 {
+      color: white;
+    }
   }
 }
 
 .contact-link {
+  @include xl {
+    line-height: 1.4;
+  }
   text-align: center;
   padding-bottom: 8rem;
+}
+
+.main {
+  margin-top: 3rem;
 }

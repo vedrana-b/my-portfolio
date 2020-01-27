@@ -13,10 +13,16 @@
     &--center {
       text-align: center;
     }
-    hr {
-      border-bottom: 1px solid #eee;
-      width: 82px;
-      margin-top: 32px;
-    }
   }
+}
+
+.header__title {
+  color: #555;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+
+.logo h1 {
+  font-weight: bold;
 }

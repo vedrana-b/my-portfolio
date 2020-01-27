@@ -1,11 +1,16 @@
 .footer {
   border-top: 1px solid #f0f0f0;
-  padding: 5rem 0;
+  padding: 3rem 0;
   &__item {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @include xl {
+      flex-direction: column;
+    }
+    margin-bottom: 4rem;
+    justify-content: space-between;
     p {
+      @include xl {
+        padding: 0.5rem 0;
+      }
       color: #777;
       font-size: 15px;
       font-weight: 300;
@@ -18,5 +23,33 @@
       align-items: center;
       justify-content: center;
     }
+  }
+}
+
+.social-icons {
+  display: flex;
+  & li > a {
+    margin-right: 1.5rem;
+    transform: scale(1.1);
+    color: #777;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    vertical-align: middle;
+    & > i {
+      &:hover {
+        color: #000;
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__ld > a {
+    position: relative;
+  }
+  &__ld > a > i {
+    position: absolute;
+    bottom: 1.55px;
   }
 }

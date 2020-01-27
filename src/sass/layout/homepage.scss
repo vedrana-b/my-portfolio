@@ -14,19 +14,42 @@ body {
     color: #4d638c;
     letter-spacing: 1px;
   }
+  p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+  }
 }
 .body-width {
-  width: 80rem;
+  @include xl {
+    width: initial;
+  }
+  width: 76rem;
+}
+
+.body {
+  &--center {
+    justify-content: center;
+  }
 }
 
 h1 {
   font-family: "Work Sans";
-  font-size: 3rem;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  padding-bottom: 14px;
+  margin-bottom: 0px;
 }
 
 h2 {
   font-size: 2rem;
   line-height: 3rem;
+  font-family: "Work Sans";
+  font-weight: 300;
 }
 h3 {
   font-size: 26px;
@@ -38,4 +61,12 @@ h4,
 h5,
 h6 {
   letter-spacing: 0.5px;
+  color: #333;
+}
+
+.short-hr {
+  border-bottom: 1px solid #eee;
+  width: 82px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
