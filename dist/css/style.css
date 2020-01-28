@@ -419,8 +419,7 @@ textarea {
 
 .header__title {
   color: #555;
-  font-weight: 600;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   margin-bottom: 1rem; }
 
 .logo h1 {
@@ -435,23 +434,27 @@ textarea {
     width: 326px;
     justify-content: space-between;
     list-style-type: none; }
+    @media (max-width: 639px) {
+      .nav__list {
+        flex-direction: column;
+        font-size: 1.5rem; } }
 
 .checkbox {
   display: none; }
 
 @media (max-width: 639px) {
   label .menu {
+    cursor: pointer;
     position: absolute;
-    right: 0;
+    right: -100px;
     top: -100px;
     z-index: 100;
-    width: 100px;
-    height: 200px;
+    width: 200px;
+    height: 164px;
     background: #fff;
     border-radius: 50% 50% 50% 50%;
     transition: 0.5s ease-in-out;
-    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-    cursor: pointer; }
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff; }
   label .hamburger {
     position: absolute;
     top: 135px;
@@ -499,7 +502,9 @@ textarea {
       margin-bottom: 1em;
       display: block;
       color: #000;
-      text-decoration: none; } }
+      text-decoration: none; }
+      label .nav__list a:active, label .nav__list a:focus {
+        background: #fdf1ce; } }
 
 @font-face {
   font-family: "Work Sans";
@@ -508,6 +513,10 @@ textarea {
 @font-face {
   font-family: "WorkSans-ExtraLight";
   src: url("../../src/font/WorkSans-ExtraLight.otf"); }
+
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("../../src/font/WorkSans-Regular.otf"); }
 
 body {
   font-family: "WorkSans-ExtraLight", sans-serif; }
@@ -546,7 +555,8 @@ h2 {
   font-weight: 300; }
 
 h3 {
-  font-size: 26px; }
+  font-size: 26px;
+  font-family: "WorkSans-Regular", sans-serif; }
 
 h1,
 h2,
@@ -698,8 +708,6 @@ h6 {
   height: 50px;
   border-radius: 4px;
   color: #555;
-  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   @media (max-width: 1200px) {
     .form-control {

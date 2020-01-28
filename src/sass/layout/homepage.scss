@@ -8,6 +8,11 @@
   src: url("../../src/font/WorkSans-ExtraLight.otf");
 }
 
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("../../src/font/WorkSans-Regular.otf");
+}
+
 body {
   font-family: "WorkSans-ExtraLight", sans-serif;
   a {
@@ -53,6 +58,7 @@ h2 {
 }
 h3 {
   font-size: 26px;
+  font-family: "WorkSans-Regular", sans-serif;
 }
 h1,
 h2,

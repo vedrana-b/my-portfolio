@@ -1,7 +1,9 @@
 const gulp = require('gulp');
 const uglify = require('gulp-uglify-es').default;
 const sass = require('gulp-sass');
-
+const autoprefixer = require('autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    postcss = require('gulp-postcss');
 
 
 
@@ -17,6 +19,15 @@ gulp.dest - Point to the folder to output,
 gulp.watch - Watch files and folders for changes
 
 */
+
+
+gulp.task('autoprefixer', () => {
+    return gulp.src('src/style.scss')
+        .pipe(sourcemaps.init())
+        .pipe(postcss([autoprefixer()]))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./dist'))
+})
 
 
 // Copy All Html files
@@ -60,6 +71,8 @@ gulp.task('minify', function () {
         .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
         .pipe(gulp.dest('dist/js'));
 });
+
+
 
 gulp.task('watch', function () {
     gulp.watch('src/*.html', ['copyHtml']);
