@@ -19,9 +19,16 @@
     }
   }
   &__thumb {
+    height: 248px;
+    width: 369px;
     position: relative;
     padding: 0;
     margin-top: 32px;
+    &--react {
+      background-image: url("../img/react-todo.png");
+      background-size: cover;
+      background-position-x: -64px;
+    }
   }
   &__item {
     position: absolute;

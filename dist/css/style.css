@@ -637,9 +637,15 @@ h6 {
     .portfolio__overlay:hover {
       opacity: 0.9; }
   .portfolio__thumb {
+    height: 248px;
+    width: 369px;
     position: relative;
     padding: 0;
     margin-top: 32px; }
+    .portfolio__thumb--react {
+      background-image: url("../img/react-todo.png");
+      background-size: cover;
+      background-position-x: -64px; }
   .portfolio__item {
     position: absolute;
     top: 50%;
