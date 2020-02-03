@@ -29,6 +29,9 @@
       background-size: cover;
       background-position-x: -64px;
     }
+    &--minimo {
+      background-image: url("../img/minimo.png");
+    }
   }
   &__item {
     position: absolute;

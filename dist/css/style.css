@@ -646,6 +646,8 @@ h6 {
       background-image: url("../img/react-todo.png");
       background-size: cover;
       background-position-x: -64px; }
+    .portfolio__thumb--minimo {
+      background-image: url("../img/minimo.png"); }
   .portfolio__item {
     position: absolute;
     top: 50%;
