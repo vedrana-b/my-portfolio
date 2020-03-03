@@ -22,6 +22,9 @@
   margin-bottom: 1rem;
 }
 
-.logo h1 {
-  font-weight: bold;
+.logo {
+  &__letters {
+    font-family: "WorkSans-Regular";
+    font-size: 3rem;
+  }
 }

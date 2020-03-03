@@ -422,10 +422,12 @@ textarea {
   letter-spacing: 3px;
   margin-bottom: 1rem; }
 
-.logo h1 {
-  font-weight: bold; }
+.logo__letters {
+  font-family: "WorkSans-Regular";
+  font-size: 3rem; }
 
 .nav {
+  align-items: center;
   display: flex;
   justify-content: flex-end; }
   .nav__list {
@@ -446,10 +448,10 @@ textarea {
   label .menu {
     cursor: pointer;
     position: absolute;
-    right: -100px;
+    right: 5rem;
     top: -100px;
     z-index: 100;
-    width: 200px;
+    width: 20px;
     height: 164px;
     background: #fff;
     border-radius: 50% 50% 50% 50%;
@@ -489,14 +491,14 @@ textarea {
         transform: rotate(90deg);
         top: 0; }
   label .checkbox:checked + .menu + .nav__list {
-    opacity: 1; }
+    display: flex; }
   label .nav__list {
     z-index: 200;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    display: none;
     transition: 0.25s 0s ease-in-out; }
     label .nav__list a {
       margin-bottom: 1em;
@@ -575,7 +577,8 @@ h6 {
 
 .footer {
   border-top: 1px solid #f0f0f0;
-  padding: 3rem 0; }
+  margin: 7rem 0 0;
+  padding-top: 2rem; }
   .footer__item {
     margin-bottom: 4rem;
     justify-content: space-between; }
@@ -648,6 +651,20 @@ h6 {
       background-position-x: -64px; }
     .portfolio__thumb--minimo {
       background-image: url("../img/minimo.png"); }
+    .portfolio__thumb--weatherapp {
+      background-image: url("../img/weatherapp.png");
+      background-position-x: -3rem;
+      background-size: cover; }
+    .portfolio__thumb--foodheaven {
+      background-image: url("../img/foodheaven.png");
+      background-size: cover; }
+    .portfolio__thumb--czv {
+      background-image: url("../img/czv.png");
+      background-size: cover; }
+    .portfolio__thumb--todo {
+      background-image: url("../img/todo.png");
+      background-size: cover;
+      background-position-x: 27rem; }
   .portfolio__item {
     position: absolute;
     top: 50%;
@@ -668,11 +685,19 @@ h6 {
 .main {
   margin-top: 3rem; }
 
+.title {
+  color: white;
+  padding-bottom: 0.5rem; }
+
 .about {
   padding-top: 2rem; }
   .about__item {
     margin-top: 1rem;
     margin-left: 1rem; }
+    @media (max-width: 768px) {
+      .about__item {
+        margin-left: 0;
+        padding: 0 1rem; } }
     @media (max-width: 992px) {
       .about__item h1 {
         font-size: 50px; } }
@@ -704,7 +729,12 @@ h6 {
         text-align: center; } }
   @media (max-width: 639px) {
     .about__text {
-      text-align: center; } }
+      text-align: left; } }
+
+@media (max-width: 768px) {
+  .website {
+    display: flex;
+    justify-content: center; } }
 
 .form-control {
   width: 442px;

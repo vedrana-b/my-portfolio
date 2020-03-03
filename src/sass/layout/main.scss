@@ -32,6 +32,24 @@
     &--minimo {
       background-image: url("../img/minimo.png");
     }
+    &--weatherapp {
+      background-image: url("../img/weatherapp.png");
+      background-position-x: -3rem;
+      background-size: cover;
+    }
+    &--foodheaven {
+      background-image: url("../img/foodheaven.png");
+      background-size: cover;
+    }
+    &--czv {
+      background-image: url("../img/czv.png");
+      background-size: cover;
+    }
+    &--todo {
+      background-image: url("../img/todo.png");
+      background-size: cover;
+      background-position-x: 27rem;
+    }
   }
   &__item {
     position: absolute;
@@ -56,4 +74,9 @@
 
 .main {
   margin-top: 3rem;
+}
+
+.title {
+  color: white;
+  padding-bottom: 0.5rem;
 }

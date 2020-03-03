@@ -1,6 +1,10 @@
 .about {
   padding-top: 2rem;
   &__item {
+    @include md {
+      margin-left: 0;
+      padding: 0 1rem;
+    }
     h1 {
       @include lg {
         font-size: 50px;
@@ -44,7 +48,14 @@
   }
   &__text {
     @include sm {
-      text-align: center;
+      text-align: left;
     }
+  }
+}
+
+@include md {
+  .website {
+    display: flex;
+    justify-content: center;
   }
 }
