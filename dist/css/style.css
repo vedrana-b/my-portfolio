@@ -423,10 +423,6 @@ textarea {
   letter-spacing: 3px;
   margin-bottom: 1rem; }
 
-.logo__letters {
-  font-family: "WorkSans-Regular";
-  font-size: 3rem; }
-
 .nav {
   align-items: center;
   display: flex;

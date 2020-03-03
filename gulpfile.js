@@ -32,7 +32,7 @@ gulp.task('autoprefixer', () => {
 
 // Copy All Html files
 gulp.task('copyHtml', function () {
-    gulp.src('*.html')
+    gulp.src('src/*.html')
         .pipe(gulp.dest('dist'));
 });
 
