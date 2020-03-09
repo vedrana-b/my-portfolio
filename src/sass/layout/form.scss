@@ -71,4 +71,9 @@
       width: 98%;
     }
   }
+  .button {
+    @include md {
+      width: 50%;
+    }
+  }
 }

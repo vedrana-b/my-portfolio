@@ -1,13 +1,16 @@
 .about {
   padding-top: 2rem;
   &__item {
-    @include md {
+    @include xlg {
       margin-left: 0;
+      margin-top: 2rem;
+      text-align: center;
       padding: 0 1rem;
     }
     h1 {
       @include lg {
         font-size: 50px;
+        margin-bottom: 2rem;
       }
       @include md {
         font-size: 40px;
@@ -18,7 +21,7 @@
     margin-left: 1rem;
   }
   ul li {
-    @include sm {
+    @include md {
       list-style-type: none;
     }
     color: #777;
@@ -37,25 +40,20 @@
     padding-bottom: 6rem;
   }
   &--skills {
+    @include xlg {
+      text-align: center;
+    }
     & > div > h3 {
-      @include md {
+      @include lg {
         text-align: center;
       }
     }
-
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
   &__text {
     @include sm {
-      text-align: left;
+      text-align: center;
     }
-  }
-}
-
-@include md {
-  .website {
-    display: flex;
-    justify-content: center;
   }
 }

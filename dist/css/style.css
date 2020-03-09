@@ -408,10 +408,7 @@ textarea {
 .header {
   display: flex;
   margin-top: 4rem;
-  justify-content: center;
-  /* h1 {
-    font-weight: bold;
-  }*/ }
+  justify-content: center; }
   .header__content {
     justify-content: center;
     margin-top: 8rem; }
@@ -422,6 +419,12 @@ textarea {
   color: #555;
   letter-spacing: 3px;
   margin-bottom: 1rem; }
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 1rem; }
+    .logo h1 {
+      font-size: 3rem; } }
 
 .nav {
   align-items: center;
@@ -576,6 +579,9 @@ h6 {
   border-top: 1px solid #f0f0f0;
   margin: 7rem 0 0;
   padding-top: 2rem; }
+  @media (max-width: 768px) {
+    .footer {
+      margin-top: 0; } }
   .footer__item {
     margin-bottom: 4rem;
     justify-content: space-between; }
@@ -637,31 +643,55 @@ h6 {
     .portfolio__overlay:hover {
       opacity: 0.9; }
   .portfolio__thumb {
-    height: 248px;
+    height: 242px;
     width: 369px;
     position: relative;
     padding: 0;
     margin-top: 32px; }
+    @media (max-width: 1191px) {
+      .portfolio__thumb {
+        width: initial; } }
+    @media (max-width: 768px) {
+      .portfolio__thumb {
+        width: 369px; } }
     .portfolio__thumb--react {
       background-image: url("../img/react-todo.png");
       background-size: cover;
       background-position-x: -64px; }
+      @media (max-width: 1191px) {
+        .portfolio__thumb--react {
+          background-position-x: initial; } }
     .portfolio__thumb--minimo {
-      background-image: url("../img/minimo.png"); }
+      background-image: url("../img/minimo.png");
+      background-size: contain; }
+      @media (max-width: 1191px) {
+        .portfolio__thumb--minimo {
+          background-size: cover; } }
     .portfolio__thumb--weatherapp {
       background-image: url("../img/weatherapp.png");
       background-position-x: -3rem;
       background-size: cover; }
+      @media (max-width: 1191px) {
+        .portfolio__thumb--weatherapp {
+          background-position-x: initial; } }
     .portfolio__thumb--foodheaven {
       background-image: url("../img/foodheaven.png");
       background-size: cover; }
     .portfolio__thumb--czv {
       background-image: url("../img/czv.png");
-      background-size: cover; }
+      background-size: contain;
+      background-position-y: 1rem; }
+      @media (max-width: 1191px) {
+        .portfolio__thumb--czv {
+          background-position-y: initial;
+          background-size: cover; } }
     .portfolio__thumb--todo {
       background-image: url("../img/todo.png");
       background-size: cover;
       background-position-x: 27rem; }
+      @media (max-width: 1191px) {
+        .portfolio__thumb--todo {
+          background-position-x: initial; } }
   .portfolio__item {
     position: absolute;
     top: 50%;
@@ -686,18 +716,30 @@ h6 {
   color: white;
   padding-bottom: 0.5rem; }
 
+@media (max-width: 1191px) {
+  .website {
+    margin: 2rem 0; } }
+
+@media (max-width: 768px) {
+  .website {
+    display: flex;
+    justify-content: center; } }
+
 .about {
   padding-top: 2rem; }
   .about__item {
     margin-top: 1rem;
     margin-left: 1rem; }
-    @media (max-width: 768px) {
+    @media (max-width: 1191px) {
       .about__item {
         margin-left: 0;
+        margin-top: 2rem;
+        text-align: center;
         padding: 0 1rem; } }
     @media (max-width: 992px) {
       .about__item h1 {
-        font-size: 50px; } }
+        font-size: 50px;
+        margin-bottom: 2rem; } }
     @media (max-width: 768px) {
       .about__item h1 {
         font-size: 40px; } }
@@ -708,7 +750,7 @@ h6 {
     list-style-type: disc;
     letter-spacing: 1px;
     padding: 0.35rem 0; }
-    @media (max-width: 639px) {
+    @media (max-width: 768px) {
       .about ul li {
         list-style-type: none; } }
   .about ul {
@@ -721,17 +763,15 @@ h6 {
   .about--skills {
     padding-top: 2rem;
     padding-bottom: 3rem; }
-    @media (max-width: 768px) {
+    @media (max-width: 1191px) {
+      .about--skills {
+        text-align: center; } }
+    @media (max-width: 992px) {
       .about--skills > div > h3 {
         text-align: center; } }
   @media (max-width: 639px) {
     .about__text {
-      text-align: left; } }
-
-@media (max-width: 768px) {
-  .website {
-    display: flex;
-    justify-content: center; } }
+      text-align: center; } }
 
 .form-control {
   width: 442px;
@@ -794,3 +834,6 @@ h6 {
     .contact__main select,
     .contact__main textarea {
       width: 98%; } }
+  @media (max-width: 768px) {
+    .contact__main .button {
+      width: 50%; } }

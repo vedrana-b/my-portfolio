@@ -19,20 +19,36 @@
     }
   }
   &__thumb {
-    height: 248px;
+    @include xlg {
+      width: initial;
+    }
+    @include md {
+      width: 369px;
+    }
+    height: 242px;
     width: 369px;
     position: relative;
     padding: 0;
     margin-top: 32px;
     &--react {
+      @include xlg {
+        background-position-x: initial;
+      }
       background-image: url("../img/react-todo.png");
       background-size: cover;
       background-position-x: -64px;
     }
     &--minimo {
+      @include xlg {
+        background-size: cover;
+      }
       background-image: url("../img/minimo.png");
+      background-size: contain;
     }
     &--weatherapp {
+      @include xlg {
+        background-position-x: initial;
+      }
       background-image: url("../img/weatherapp.png");
       background-position-x: -3rem;
       background-size: cover;
@@ -42,10 +58,18 @@
       background-size: cover;
     }
     &--czv {
+      @include xlg {
+        background-position-y: initial;
+        background-size: cover;
+      }
       background-image: url("../img/czv.png");
-      background-size: cover;
+      background-size: contain;
+      background-position-y: 1rem;
     }
     &--todo {
+      @include xlg {
+        background-position-x: initial;
+      }
       background-image: url("../img/todo.png");
       background-size: cover;
       background-position-x: 27rem;
@@ -79,4 +103,16 @@
 .title {
   color: white;
   padding-bottom: 0.5rem;
+}
+
+@include xlg {
+  .website {
+    margin: 2rem 0;
+  }
+}
+@include md {
+  .website {
+    display: flex;
+    justify-content: center;
+  }
 }

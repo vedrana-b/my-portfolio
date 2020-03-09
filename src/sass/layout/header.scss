@@ -2,11 +2,6 @@
   display: flex;
   margin-top: 4rem;
   justify-content: center;
-
-  /* h1 {
-    font-weight: bold;
-  }*/
-
   &__content {
     justify-content: center;
     margin-top: 8rem;
@@ -20,4 +15,13 @@
   color: #555;
   letter-spacing: 3px;
   margin-bottom: 1rem;
+}
+
+.logo {
+  @include md {
+    margin-left: 1rem;
+    h1 {
+      font-size: 3rem;
+    }
+  }
 }
