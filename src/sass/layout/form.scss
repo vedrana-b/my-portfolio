@@ -77,3 +77,15 @@
     }
   }
 }
+
+.animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.paper-plane {
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}

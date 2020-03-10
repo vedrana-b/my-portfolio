@@ -508,6 +508,12 @@ textarea {
       label .nav__list a:active, label .nav__list a:focus {
         background: #fdf1ce; } }
 
+.hamburger-show {
+  overflow: initial; }
+
+.hamburger-hide {
+  overflow: hidden; }
+
 @font-face {
   font-family: "Work Sans";
   src: url("../../src/font/WorkSans-Light.otf"); }
@@ -837,3 +843,13 @@ h6 {
   @media (max-width: 768px) {
     .contact__main .button {
       width: 50%; } }
+
+.animation {
+  position: relative;
+  overflow: hidden; }
+
+.paper-plane {
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 0; }
