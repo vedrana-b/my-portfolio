@@ -22,10 +22,11 @@
       letter-spacing: 0.2px;
     }
     & > div {
-      display: flex;
-      flex-direction: column;
+      @include lg {
+        justify-content: center;
+      }
       align-items: center;
-      justify-content: center;
+      display: flex;
     }
   }
 }
@@ -56,4 +57,12 @@
     position: absolute;
     bottom: 1.55px;
   }
+}
+
+.company-name {
+  justify-content: center;
+}
+
+.email-address {
+  justify-content: flex-end;
 }

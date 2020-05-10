@@ -604,10 +604,11 @@ h6 {
         .footer__item p {
           padding: 0.5rem 0; } }
     .footer__item > div {
-      display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      display: flex; }
+      @media (max-width: 992px) {
+        .footer__item > div {
+          justify-content: center; } }
 
 .social-icons {
   display: flex; }
@@ -629,6 +630,12 @@ h6 {
   .social-icons__ld > a > i {
     position: absolute;
     bottom: 1.55px; }
+
+.company-name {
+  justify-content: center; }
+
+.email-address {
+  justify-content: flex-end; }
 
 .portfolio {
   padding-bottom: 5rem; }
