@@ -6,7 +6,8 @@
   margin: 7rem 0 0;
   padding-top: 2rem;
   &__item {
-    @include xl {
+    @include lg {
+      align-items: center;
       flex-direction: column;
     }
     margin-bottom: 4rem;

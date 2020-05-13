@@ -29,7 +29,7 @@ body {
 }
 .body-width {
   @include xl {
-    width: initial;
+    width: 100%;
   }
   width: 76rem;
 }

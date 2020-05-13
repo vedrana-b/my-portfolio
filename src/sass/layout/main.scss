@@ -23,7 +23,13 @@
       width: initial;
     }
     @include md {
-      width: 369px;
+      width: 310px;
+    }
+    @include sm {
+      width: 368px;
+    }
+    @include xs {
+      width: 310px;
     }
     height: 242px;
     width: 369px;
@@ -31,9 +37,6 @@
     padding: 0;
     margin-top: 32px;
     &--react {
-      @include xlg {
-        background-position-x: initial;
-      }
       background-image: url("../img/react-todo.png");
       background-size: cover;
       background-position-x: -64px;
@@ -46,16 +49,13 @@
       background-size: contain;
     }
     &--weatherapp {
-      @include xlg {
-        background-position-x: initial;
-      }
       background-image: url("../img/weatherapp.png");
       background-position-x: -3rem;
       background-size: cover;
     }
-    &--foodheaven {
-      background-image: url("../img/foodheaven.png");
-      background-size: cover;
+    &--morning {
+      background: url("../img/morning-app.png");
+      background-size: contain;
     }
     &--czv {
       @include xlg {

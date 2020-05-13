@@ -24,4 +24,7 @@
       font-size: 3rem;
     }
   }
+  @include sm {
+    margin-left: 0;
+  }
 }

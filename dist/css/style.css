@@ -426,6 +426,10 @@ textarea {
     .logo h1 {
       font-size: 3rem; } }
 
+@media (max-width: 639px) {
+  .logo {
+    margin-left: 0; } }
+
 .nav {
   align-items: center;
   display: flex;
@@ -542,7 +546,7 @@ body {
   width: 76rem; }
   @media (max-width: 1200px) {
     .body-width {
-      width: initial; } }
+      width: 100%; } }
 
 .body--center {
   justify-content: center; }
@@ -591,8 +595,9 @@ h6 {
   .footer__item {
     margin-bottom: 4rem;
     justify-content: space-between; }
-    @media (max-width: 1200px) {
+    @media (max-width: 992px) {
       .footer__item {
+        align-items: center;
         flex-direction: column; } }
     .footer__item p {
       color: #777;
@@ -666,14 +671,17 @@ h6 {
         width: initial; } }
     @media (max-width: 768px) {
       .portfolio__thumb {
-        width: 369px; } }
+        width: 310px; } }
+    @media (max-width: 639px) {
+      .portfolio__thumb {
+        width: 368px; } }
+    @media (max-width: 321px) {
+      .portfolio__thumb {
+        width: 310px; } }
     .portfolio__thumb--react {
       background-image: url("../img/react-todo.png");
       background-size: cover;
       background-position-x: -64px; }
-      @media (max-width: 1191px) {
-        .portfolio__thumb--react {
-          background-position-x: initial; } }
     .portfolio__thumb--minimo {
       background-image: url("../img/minimo.png");
       background-size: contain; }
@@ -684,12 +692,9 @@ h6 {
       background-image: url("../img/weatherapp.png");
       background-position-x: -3rem;
       background-size: cover; }
-      @media (max-width: 1191px) {
-        .portfolio__thumb--weatherapp {
-          background-position-x: initial; } }
-    .portfolio__thumb--foodheaven {
-      background-image: url("../img/foodheaven.png");
-      background-size: cover; }
+    .portfolio__thumb--morning {
+      background: url("../img/morning-app.png");
+      background-size: contain; }
     .portfolio__thumb--czv {
       background-image: url("../img/czv.png");
       background-size: contain;
