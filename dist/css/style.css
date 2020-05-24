@@ -452,10 +452,9 @@ textarea {
   label .menu {
     cursor: pointer;
     position: absolute;
-    right: 5rem;
+    right: 6rem;
     top: -100px;
     z-index: 100;
-    width: 20px;
     height: 164px;
     background: #fff;
     border-radius: 50% 50% 50% 50%;
@@ -865,3 +864,6 @@ h6 {
   position: absolute;
   top: 50%;
   left: 0; }
+  @media (max-width: 639px) {
+    .paper-plane {
+      display: none; } }

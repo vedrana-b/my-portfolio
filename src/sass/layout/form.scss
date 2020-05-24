@@ -84,6 +84,9 @@
 }
 
 .paper-plane {
+  @include sm {
+    display: none;
+  }
   height: 60px;
   position: absolute;
   top: 50%;
