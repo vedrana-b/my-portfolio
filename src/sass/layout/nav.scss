@@ -19,21 +19,72 @@
   display: none;
 }
 @include sm {
-  label {
+  .hamburger-icon {
     .menu {
-      cursor: pointer;
-      position: absolute;
-      right: 6rem;
-      top: -100px;
-      z-index: 100;
-      //width: 20px;
-      height: 164px;
-      background: #fff;
-      border-radius: 50% 50% 50% 50%;
-      transition: 0.5s ease-in-out;
-      box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+        @include position(absolute, $top:-100px, $right: 0);
+        background: transparent;
+        border-radius: 50% 50% 50% 50%;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+        cursor: pointer;
+        height: 100px;
+        z-index: 100;
+        width: 100px;
     }
-
+    .hamburger {
+        @include position(absolute, $top: 136px, $left: 50px);
+        cursor: pointer;
+        background: rgb(0, 0, 0);
+        display: block;
+        height: 3px;
+        transform-origin: center;
+        transition: 0.5s ease-in-out;
+        width: 30px;
+        &:after,
+        &:before {
+            @include position(absolute);
+            background: rgb(0, 0, 0);
+            content: "";
+            display: block;
+            height: 100%;
+            transition: 0.5s ease-in-out;
+            width: 100%;
+        }
+        &:before {
+            top: -12px;
+        }
+        &:after {
+            bottom: -12px;
+        }
+    }
+    .checkbox:checked + .menu {
+        box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+        border-radius: 0;
+        background: #fff;
+        .hamburger {
+            transform: rotate(45deg);
+            &:after {
+                transform: rotate(90deg);
+                bottom: 0;
+            }
+            &:before {
+                transform: rotate(90deg);
+                top: 0;
+            }
+        }
+    }
+    .checkbox:checked + .menu + ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-nav__list {
+        @include position(absolute, $top: 20rem, $left: 50%);
+        display: none;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+    }
+}
+/*
     .hamburger {
       position: absolute;
       top: 135px;
@@ -60,26 +111,7 @@
       &:after {
         bottom: -10px;
       }
-    }
-
-    .checkbox:checked + .menu {
-      box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
-      border-radius: 0;
-      .hamburger {
-        transform: rotate(45deg);
-        &:after {
-          transform: rotate(90deg);
-          bottom: 0;
-        }
-        &:before {
-          transform: rotate(90deg);
-          top: 0;
-        }
-      }
-    }
-    .checkbox:checked + .menu + .nav__list {
-      display: flex;
-    }
+    }*/
 
     .nav__list {
       z-index: 200;
@@ -101,11 +133,11 @@
       }
     }
   }
-}
 
 .hamburger-show {
-  overflow: initial;
+    overflow: initial;
 }
+
 .hamburger-hide {
-  overflow: hidden;
+    overflow: hidden;
 }
