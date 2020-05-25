@@ -1,57 +1,55 @@
 // Extra small devices
 @mixin xs {
-  @media (max-width: #{$screen-xs-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-xs-min}) {
+        @content;
+    }
 }
 
 // Small devices
 @mixin sm {
-  @media (max-width: #{$screen-sm-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
 }
 
 // Medium devices
 @mixin md {
-  @media (max-width: #{$screen-md-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
 }
 
 // Large devices
 @mixin lg {
-  @media (max-width: #{$screen-lg-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-lg-min}) {
+        @content;
+    }
 }
 
 // Large devices
 @mixin xlg {
-  @media (max-width: #{$screen-xlg-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-xlg-min}) {
+        @content;
+    }
 }
 
 // Extra large devices
 @mixin xl {
-  @media (max-width: #{$screen-xl-min}) {
-    @content;
-  }
+    @media (max-width: #{$screen-xl-min}) {
+        @content;
+    }
 }
 
-
 // Position mixin
-@mixin position($type: static, $top: null, $right: null, $bottom: null, $left:null) {
-	@if($type=='static'or $type=='absolute'or $type=='relative'or $type=='fixed'or $type=='sticky') {
-		position: $type;
-		top: $top;
-		right: $right;
-		bottom: $bottom;
-		left: $left;
-	}
-	@else {
-		position: static;
-		@warn "The type `#{$type} isn't valid position attribute. It is set to default value.`";
-	}
+@mixin position($type: static, $top: null, $right: null, $bottom: null, $left: null) {
+    @if ($type== "static" or $type== "absolute" or $type== "relative" or $type== "fixed" or $type== "sticky") {
+        position: $type;
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+    } @else {
+        position: static;
+        @warn "The type `#{$type} isn't valid position attribute. It is set to default value.`";
+    }
 }

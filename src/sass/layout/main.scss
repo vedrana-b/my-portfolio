@@ -3,7 +3,7 @@
   &__overlay {
     position: absolute;
     background: #222;
-    color: #ffffff;
+    color: $white;
     top: 0;
     left: 0;
     right: 0;
@@ -83,7 +83,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     h2 {
-      color: white;
+      color: $white;
     }
   }
 }
@@ -101,7 +101,7 @@
 }
 
 .title {
-  color: white;
+  color: $white;
   padding-bottom: 0.5rem;
 }
 

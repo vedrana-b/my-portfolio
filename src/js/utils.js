@@ -2,6 +2,7 @@ $(".js-hamburger-menu").click(function (e) {
     $("body").toggleClass("hamburger-show hamburger-hide");
 });
 
+
 /*if ($(window).width() < 960) {
     $(".main").removeClass("animation");
 } else {

@@ -440,9 +440,9 @@ textarea {
   .nav__list {
     align-items: center;
     display: flex;
-    width: 326px;
     justify-content: space-between;
-    list-style-type: none; }
+    list-style-type: none;
+    width: 326px; }
     @media (max-width: 639px) {
       .nav__list {
         flex-direction: column;
@@ -502,41 +502,6 @@ textarea {
     display: flex;
     flex-direction: column;
     text-align: center; }
-  .hamburger-icon .main-nav__list {
-    position: absolute;
-    top: 20rem;
-    left: 50%;
-    display: none;
-    transform: translate(-50%, -50%);
-    z-index: 200; }
-  /*
-    .hamburger {
-      position: absolute;
-      top: 135px;
-      left: 50px;
-      width: 30px;
-      height: 2px;
-      background: #000;
-      display: block;
-      transform-origin: center;
-      transition: 0.5s ease-in-out;
-      &:after,
-      &:before {
-        transition: 0.5s ease-in-out;
-        content: "";
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: #000;
-      }
-      &:before {
-        top: -10px;
-      }
-      &:after {
-        bottom: -10px;
-      }
-    }*/
   .nav__list {
     z-index: 200;
     position: absolute;
@@ -548,10 +513,10 @@ textarea {
     .nav__list a {
       margin-bottom: 1em;
       display: block;
-      color: #000;
+      color: black;
       text-decoration: none; }
       .nav__list a:active, .nav__list a:focus {
-        background: #fdf1ce; } }
+        background-color: #fdf1ce; } }
 
 .hamburger-show {
   overflow: initial; }
@@ -688,7 +653,7 @@ h6 {
   .portfolio__overlay {
     position: absolute;
     background: #222;
-    color: #ffffff;
+    color: #fff;
     top: 0;
     left: 0;
     right: 0;
@@ -759,7 +724,7 @@ h6 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
     .portfolio__item h2 {
-      color: white; }
+      color: #fff; }
 
 .contact-link {
   text-align: center;
@@ -772,7 +737,7 @@ h6 {
   margin-top: 3rem; }
 
 .title {
-  color: white;
+  color: #fff;
   padding-bottom: 0.5rem; }
 
 @media (max-width: 1191px) {
@@ -871,7 +836,7 @@ h6 {
   background: #222;
   border-radius: 100px;
   border: none;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   box-shadow: none;
   font-weight: bold;
@@ -881,7 +846,7 @@ h6 {
   height: 50px;
   transition: all 0.4s ease-in-out; }
   .button:hover {
-    background: #000; }
+    background: black; }
 
 .contact__main {
   margin-bottom: 8rem; }

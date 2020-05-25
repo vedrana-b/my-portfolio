@@ -1,33 +1,33 @@
 .header {
-  display: flex;
-  margin-top: 4rem;
-  justify-content: center;
-  &__content {
-    @include sm {
-      margin-top: 4rem;
-    }
+    display: flex;
+    margin-top: 4rem;
     justify-content: center;
-    margin-top: 8rem;
-    &--center {
-      text-align: center;
+    &__content {
+        @include sm {
+            margin-top: 4rem;
+        }
+        justify-content: center;
+        margin-top: 8rem;
+        &--center {
+            text-align: center;
+        }
     }
-  }
 }
 
 .header__title {
-  color: #555;
-  letter-spacing: 3px;
-  margin-bottom: 1rem;
+    color: $medium-gray;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
 }
 
 .logo {
-  @include md {
-    margin-left: 1rem;
-    h1 {
-      font-size: 3rem;
+    @include md {
+        margin-left: 1rem;
+        h1 {
+            font-size: 3rem;
+        }
     }
-  }
-  @include sm {
-    margin-left: 0;
-  }
+    @include sm {
+        margin-left: 0;
+    }
 }

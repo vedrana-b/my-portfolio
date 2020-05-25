@@ -1,94 +1,94 @@
 .form-control {
-  @include xl {
-    width: 100%;
-  }
-  width: 442px;
-  &:nth-of-type(2) {
     @include xl {
-      margin-left: initial;
+        width: 100%;
     }
-    margin-left: 0.75rem;
-  }
-  border: 1px solid #f0f0f0;
-  box-shadow: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transition: all 0.4s ease-in-out;
-  height: 50px;
-  border-radius: 4px;
-  color: #555;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  &:hover {
-    border-color: #777;
-  }
-  &::placeholder {
-    color: #999;
-    font-size: 14px;
-  }
+    width: 442px;
+    &:nth-of-type(2) {
+        @include xl {
+            margin-left: initial;
+        }
+        margin-left: 0.75rem;
+    }
+    border: 1px solid #f0f0f0;
+    box-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+    height: 50px;
+    border-radius: 4px;
+    color: $medium-gray;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    &:hover {
+        border-color: $gray;
+    }
+    &::placeholder {
+        color: $light-gray;
+        font-size: 14px;
+    }
 }
 
 .select {
-  @include xl {
-    margin-left: initial;
-  }
-  margin-left: 0.75rem;
-  background-position: right -0.5rem center;
+    @include xl {
+        margin-left: initial;
+    }
+    margin-left: 0.75rem;
+    background-position: right -0.5rem center;
 }
 
 .textarea {
-  height: 6.4375rem;
+    height: 6.4375rem;
 }
 
 .button {
-  background: #222;
-  border-radius: 100px;
-  border: none;
-  color: #ffffff;
-  font-weight: 400;
-  box-shadow: none;
-  font-weight: bold;
-  width: 206px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 50px;
-  transition: all 0.4s ease-in-out;
-  &:hover {
-    background: #000;
-  }
+    background: #222;
+    border-radius: 100px;
+    border: none;
+    color: $white;
+    font-weight: 400;
+    box-shadow: none;
+    font-weight: bold;
+    width: 206px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background: black;
+    }
 }
 
 .contact__main {
-  margin-bottom: 8rem;
-  & > div {
-    @include md {
-      justify-content: center;
+    margin-bottom: 8rem;
+    & > div {
+        @include md {
+            justify-content: center;
+        }
     }
-  }
-  input,
-  select,
-  textarea {
-    @include md {
-      width: 98%;
+    input,
+    select,
+    textarea {
+        @include md {
+            width: 98%;
+        }
     }
-  }
-  .button {
-    @include md {
-      width: 50%;
+    .button {
+        @include md {
+            width: 50%;
+        }
     }
-  }
 }
 
 .animation {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .paper-plane {
-  @include sm {
-    display: none;
-  }
-  height: 60px;
-  position: absolute;
-  top: 50%;
-  left: 0;
+    @include sm {
+        display: none;
+    }
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 0;
 }
