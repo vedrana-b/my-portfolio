@@ -1,1 +1,1 @@
-$(".js-hamburger-menu").click(function(e){$("body").toggleClass("hamburger-show hamburger-hide")});
+$("#js-hamburger-menu").click(function(e){$("body").toggleClass("hamburger-show hamburger-hide")});
