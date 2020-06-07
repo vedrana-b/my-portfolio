@@ -2,6 +2,7 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap");
 html,
 body,
 div,
@@ -526,15 +527,15 @@ textarea {
 
 @font-face {
   font-family: "Work Sans";
-  src: url("../../src/font/WorkSans-Light.otf"); }
+  src: url("./font/WorkSans-Light.otf"); }
 
 @font-face {
   font-family: "WorkSans-ExtraLight";
-  src: url("../../src/font/WorkSans-ExtraLight.otf"); }
+  src: url("./font/WorkSans-ExtraLight.otf"); }
 
 @font-face {
   font-family: "WorkSans-Regular";
-  src: url("../../src/font/WorkSans-Regular.otf"); }
+  src: url("./font/WorkSans-Regular.otf"); }
 
 body {
   font-family: "WorkSans-ExtraLight", sans-serif; }
@@ -685,24 +686,24 @@ h6 {
       .portfolio__thumb {
         width: 310px; } }
     .portfolio__thumb--react {
-      background-image: url("../img/react-todo.png");
+      background-image: url("../img/react-todo.jpg");
       background-size: cover;
       background-position-x: -64px; }
     .portfolio__thumb--minimo {
-      background-image: url("../img/minimo.png");
+      background-image: url("../img/minimo.jpg");
       background-size: contain; }
       @media (max-width: 1191px) {
         .portfolio__thumb--minimo {
           background-size: cover; } }
     .portfolio__thumb--weatherapp {
-      background-image: url("../img/weatherapp.png");
+      background-image: url("../img/weatherapp.jpg");
       background-position-x: -3rem;
       background-size: cover; }
     .portfolio__thumb--morning {
-      background: url("../img/morning-app.png");
+      background: url("../img/morning-app.jpg");
       background-size: contain; }
     .portfolio__thumb--czv {
-      background-image: url("../img/czv.png");
+      background-image: url("../img/czv.jpg");
       background-size: contain;
       background-position-y: 1rem; }
       @media (max-width: 1191px) {
@@ -710,7 +711,7 @@ h6 {
           background-position-y: initial;
           background-size: cover; } }
     .portfolio__thumb--todo {
-      background-image: url("../img/todo.png");
+      background-image: url("../img/todo.jpg");
       background-size: cover;
       background-position-x: 27rem; }
       @media (max-width: 1191px) {
@@ -798,7 +799,6 @@ h6 {
       text-align: center; } }
 
 .form-control {
-  width: 442px;
   border: 1px solid #f0f0f0;
   box-shadow: none;
   margin-top: 10px;
@@ -821,16 +821,18 @@ h6 {
   .form-control::placeholder {
     color: #999;
     font-size: 14px; }
+  .form-control--spacer {
+    margin-left: 0.75rem; }
+    @media (max-width: 1200px) {
+      .form-control--spacer {
+        margin-left: initial; } }
 
 .select {
-  margin-left: 0.75rem;
-  background-position: right -0.5rem center; }
-  @media (max-width: 1200px) {
-    .select {
-      margin-left: initial; } }
+  background-position: right 0.5rem center; }
 
 .textarea {
-  height: 6.4375rem; }
+  height: 6.4375rem;
+  width: 100%; }
 
 .button {
   background: #222;
@@ -841,12 +843,22 @@ h6 {
   box-shadow: none;
   font-weight: bold;
   width: 206px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   height: 50px;
   transition: all 0.4s ease-in-out; }
   .button:hover {
-    background: black; }
+    background: #151515; }
+  .button:focus {
+    background: #090909; }
+
+.button[disabled] {
+  background-color: #77DD77;
+  opacity: 0.75; }
+  .button[disabled]:focus {
+    background: #4ed34e; }
+  .button[disabled]:hover {
+    background: #63d863; }
 
 .contact__main {
   margin-bottom: 8rem; }
@@ -874,3 +886,36 @@ h6 {
   @media (max-width: 639px) {
     .paper-plane {
       display: none; } }
+
+.error {
+  display: none; }
+
+.sent {
+  background-color: #77DD77; }
+  .sent:focus {
+    background: #4ed34e; }
+  .sent:hover {
+    background: #63d863; }
+
+.not-sent {
+  background-color: #d3260b;
+  width: 380px; }
+  .not-sent:focus {
+    background: #a31d08; }
+  .not-sent:hover {
+    background: #bb220a; }
+
+.form-container {
+  display: flex;
+  position: relative; }
+  .form-container:nth-child(1) {
+    padding-right: 12px; }
+  .form-container span {
+    color: #d3260b;
+    font-size: 12px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    bottom: -5px;
+    left: 22px; }

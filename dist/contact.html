@@ -12,7 +12,8 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/font/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="body">
@@ -21,7 +22,7 @@
             <div class="body-width">
                 <section class="grid-x grid-padding-x">
                     <div class="cell large-6 medium-3 small-3 logo">
-                        <a href="../index.html">
+                        <a href="index.html">
                             <h1>VB</h1>
                         </a>
                     </div>
@@ -29,10 +30,10 @@
                         <label class="hamburger-icon">
                             <input class="checkbox" type="checkbox" />
                             <span class="menu">
-                              <span id="js-hamburger-menu" class="hamburger"></span>
+                                <span id="js-hamburger-menu" class="hamburger"></span>
                             </span>
-                            <ul class="nav__list"  id="menu">
-                                <a href="../index.html">
+                            <ul class="nav__list" id="menu">
+                                <a href="index.html">
                                     <li>Portfolio</li>
                                 </a>
                                 <a href="about.html">
@@ -55,26 +56,46 @@
             </div>
         </header>
         <main class="main">
-            <div class="grid-container about ">
+            <div class="grid-container about">
                 <div class="grid-x grid-padding-x body--center">
-                    <div class="cell medium-9 contact__main">
-                        <div class="grid-x grid-padding-x">
-                            <input class="cell form-control" type="text" placeholder="Name">
-                            <input class="cell form-control" type="text" placeholder="Email">
+                    <form class="cell medium-9 contact__main" id="form">
+                        <div class="grid-x grid-padding-x form">
+                            <div class="cell form-container medium-6">
+                                <input id="name" class="cell form-control" type="text" placeholder="Name">
+                                <span class="error">Please enter your name</span>
+                            </div>
+                            <div class="cell form-container medium-6">
+                                <input id="email" class="cell form-control" type="text" placeholder="Email">
+                                <span class="error">Please enter your email</span>
+                            </div>
                         </div>
-                        <div class="grid-x grid-padding-x">
-                            <input class="cell form-control" type="number" placeholder="Phone Number">
-                            <select class="cell form-control select" type="text">
-                                <option>Budget select</option>
-                                <option value="low">$100 - $200</option>
-                                <option value="medium">$300 - $500</option>
-                                <option value="high">$700 - $1000</option>
-                            </select>
-                            <textarea class="cell medium-12 form-control textarea" placeholder="Project Details"></textarea>
-                            <input class="form-control button" type="submit" value="Send message">
+                        <div class="grid-x grid-padding-x form-container">
+                            <div class="cell form-container medium-6">
+                                <input id="phonenumber" class="cell form-control" type="number" placeholder="Phone Number">
+                                <span class="error">Please enter your phonenumber</span>
+                            </div>
+                            <div class="cell form-container medium-6">
+                                <select id="budget" class="cell form-control select" type="text">
+                                        <option value="">Budget select</option>
+                                        <option value="200">$200</option>
+                                        <option value="200-1000">$200 - $1000</option>
+                                        <option value="1000+">$1000+</option>
+                                </select>
+                                <span class="error">Please enter your budget</span>
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x form-container">
+                            <div class="cell"> 
+                            <textarea id="message" class="cell medium-12 form-control textarea"
+                                placeholder="Project Details"></textarea>
+                                <span class="error">Please enter your email</span>
+                            </div>
+                        </div>
+                        <div class="form-container">
+                            <input id="submit" class="form-control button" type="submit" value="Send message">
                         </div>
                         <img class="paper-plane" src="./img/plane.png">
-                    </div>
+                    </form>
                 </div>
         </main>
         <footer class="footer">
@@ -89,7 +110,7 @@
                         <p>Innovation X, Belgrade, Serbia</p>
                     </div>
                     <div class="cell medium-4 email-address">
-                        <p> vedrana93@gmail.com </p>
+                        <p>vedrana.bra@hotmail.com</p>
                     </div>
                 </div>
                 <div class="grid-x footer__item">
@@ -100,13 +121,15 @@
                     <div>
                         <ul class="social-icons">
                             <li>
-                                <a target="blank" href="https://www.behance.net/vedrana93"><i class="fa fa-behance"></i></a>
+                                <a target="blank" href="https://www.behance.net/vedrana93"><i
+                                        class="fa fa-behance"></i></a>
                             </li>
                             <li>
                                 <a> <i class="fa fa-instagram"></i></a>
                             </li>
                             <li class="social-icons__ld">
-                                <a target="blank" href="https://www.linkedin.com/in/vedrana3003"><i class="fa fa-linkedin"></i></a>
+                                <a target="blank" href="https://www.linkedin.com/in/vedrana3003"><i
+                                        class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -116,13 +139,10 @@
     </div>
     <!-- Compressed JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA=="
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js"
+        integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA=="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/MotionPathPlugin.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="./js/ajax.js"></script>
     <script src="./js/utils.js"></script>
 </body>
 

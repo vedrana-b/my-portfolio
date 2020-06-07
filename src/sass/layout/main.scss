@@ -37,7 +37,7 @@
     padding: 0;
     margin-top: 32px;
     &--react {
-      background-image: url("../img/react-todo.png");
+      background-image: url("../img/react-todo.jpg");
       background-size: cover;
       background-position-x: -64px;
     }
@@ -45,16 +45,16 @@
       @include xlg {
         background-size: cover;
       }
-      background-image: url("../img/minimo.png");
+      background-image: url("../img/minimo.jpg");
       background-size: contain;
     }
     &--weatherapp {
-      background-image: url("../img/weatherapp.png");
+      background-image: url("../img/weatherapp.jpg");
       background-position-x: -3rem;
       background-size: cover;
     }
     &--morning {
-      background: url("../img/morning-app.png");
+      background: url("../img/morning-app.jpg");
       background-size: contain;
     }
     &--czv {
@@ -62,7 +62,7 @@
         background-position-y: initial;
         background-size: cover;
       }
-      background-image: url("../img/czv.png");
+      background-image: url("../img/czv.jpg");
       background-size: contain;
       background-position-y: 1rem;
     }
@@ -70,7 +70,7 @@
       @include xlg {
         background-position-x: initial;
       }
-      background-image: url("../img/todo.png");
+      background-image: url("../img/todo.jpg");
       background-size: cover;
       background-position-x: 27rem;
     }

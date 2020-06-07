@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
+
 .form-control {
     @include xl {
         width: 100%;
     }
-    width: 442px;
+    //width: 420px;
     &:nth-of-type(2) {
         @include xl {
             margin-left: initial;
@@ -25,18 +27,21 @@
         color: $light-gray;
         font-size: 14px;
     }
+    &--spacer {
+        @include xl {
+            margin-left: initial;
+        }
+        margin-left: 0.75rem;
+    }
 }
 
 .select {
-    @include xl {
-        margin-left: initial;
-    }
-    margin-left: 0.75rem;
-    background-position: right -0.5rem center;
+    background-position: right 0.5rem center;
 }
 
 .textarea {
     height: 6.4375rem;
+    width: 100%;
 }
 
 .button {
@@ -48,13 +53,51 @@
     box-shadow: none;
     font-weight: bold;
     width: 206px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     height: 50px;
     transition: all 0.4s ease-in-out;
     &:hover {
-        background: black;
+        background: darken(#222, 5%);;
     }
+    &:focus {
+        background: darken(#222, 10%);;
+    }
+    &--sent {
+        background-color: #77DD77;
+        &:focus {
+            background: darken(#77DD77, 10%);;
+        }
+        &:hover {
+            background: darken(#77DD77, 5%);;
+        }
+    }
+    &--not-sent {
+        background-color: #d3260b;
+        width: 380px;
+        &:focus {
+            background: darken(#d3260b, 10%);;
+        }
+        &:hover {
+            background: darken(#d3260b, 5%);;
+        }
+    }
+    
+}
+
+.button[disabled] {
+    background-color: #77DD77;
+    opacity: 0.75;
+    &:focus {
+        background: darken(#77DD77, 10%);;
+    }
+    &:hover {
+        background: darken(#77DD77, 5%);;
+    }
+}
+
+.error {
+    display: none;
 }
 
 .contact__main {
@@ -91,4 +134,22 @@
     position: absolute;
     top: 50%;
     left: 0;
+}
+
+.form-container {
+    display: flex;
+    position: relative;
+    &:nth-child(1){
+        padding-right: 12px;
+    }
+    span {
+        color: #d3260b;
+        font-size: 12px;
+        font-family: 'Work Sans', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        position: absolute;
+        bottom: -5px;
+        left: 22px;
+    }
 }
