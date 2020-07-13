@@ -5,6 +5,12 @@
     }
 }
 
+@mixin sxs {
+    @media (max-width: #{$screen-sxs-min}) {
+        @content;
+    }
+}
+
 // Small devices
 @mixin sm {
     @media (max-width: #{$screen-sm-min}) {

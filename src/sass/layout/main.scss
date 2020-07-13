@@ -1,118 +1,122 @@
 .portfolio {
-  padding-bottom: 5rem;
-  &__overlay {
-    position: absolute;
-    background: #222;
-    color: $white;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    vertical-align: top;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    &:hover {
-      opacity: 0.9;
+    padding-bottom: 5rem;
+    &__overlay {
+        position: absolute;
+        background: #222;
+        color: $white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        vertical-align: top;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            opacity: 0.9;
+        }
     }
-  }
-  &__thumb {
-    @include xlg {
-      width: initial;
+    &__thumb {
+        @include xlg {
+            width: initial;
+        }
+        @include md {
+            width: 310px;
+        }
+        @include sm {
+            width: 368px;
+        }
+        @include xs {
+            width: 310px;
+        }
+        height: 242px;
+        width: 369px;
+        position: relative;
+        padding: 0;
+        margin-top: 32px;
+        &--react {
+            background-image: url("../img/react-todo.jpg");
+            background-size: cover;
+            background-position-x: -4rem;
+        }
+        &--forum {
+            background-image: url("../img/forum.png");
+            background-size: cover;
+        }
+        &--minimo {
+            @include xlg {
+                background-size: cover;
+            }
+            background-image: url("../img/minimo.jpg");
+            background-size: contain;
+        }
+        &--weatherapp {
+            background-image: url("../img/weatherapp.jpg");
+            background-position-x: -3rem;
+            background-size: cover;
+        }
+        &--morning {
+            background: url("../img/morning-app.jpg");
+            background-size: contain;
+        }
+        &--czv {
+            @include xlg {
+                background-position-y: initial;
+                background-size: cover;
+            }
+            background-image: url("../img/czv.jpg");
+            background-size: contain;
+            background-position-y: 1rem;
+        }
+        &--todo {
+            @include xlg {
+                background-position-x: initial;
+            }
+            background-image: url("../img/todo.jpg");
+            background-size: cover;
+            background-position-x: 27rem;
+        }
     }
-    @include md {
-      width: 310px;
+    &__item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        h2 {
+            color: $white;
+        }
     }
-    @include sm {
-      width: 368px;
-    }
-    @include xs {
-      width: 310px;
-    }
-    height: 242px;
-    width: 369px;
-    position: relative;
-    padding: 0;
-    margin-top: 32px;
-    &--react {
-      background-image: url("../img/react-todo.jpg");
-      background-size: cover;
-      background-position-x: -64px;
-    }
-    &--minimo {
-      @include xlg {
-        background-size: cover;
-      }
-      background-image: url("../img/minimo.jpg");
-      background-size: contain;
-    }
-    &--weatherapp {
-      background-image: url("../img/weatherapp.jpg");
-      background-position-x: -3rem;
-      background-size: cover;
-    }
-    &--morning {
-      background: url("../img/morning-app.jpg");
-      background-size: contain;
-    }
-    &--czv {
-      @include xlg {
-        background-position-y: initial;
-        background-size: cover;
-      }
-      background-image: url("../img/czv.jpg");
-      background-size: contain;
-      background-position-y: 1rem;
-    }
-    &--todo {
-      @include xlg {
-        background-position-x: initial;
-      }
-      background-image: url("../img/todo.jpg");
-      background-size: cover;
-      background-position-x: 27rem;
-    }
-  }
-  &__item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    h2 {
-      color: $white;
-    }
-  }
 }
 
 .contact-link {
-  @include xl {
-    line-height: 1.4;
-  }
-  text-align: center;
-  padding-bottom: 8rem;
+    @include xl {
+        line-height: 1.4;
+    }
+    text-align: center;
+    padding-bottom: 8rem;
 }
 
 .main {
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 
 .title {
-  color: $white;
-  padding-bottom: 0.5rem;
+    color: $white;
+    padding-bottom: 0.5rem;
 }
 
 @include xlg {
-  .website {
-    margin: 2rem 0;
-  }
+    .website {
+        margin: 2rem 0;
+    }
 }
 @include md {
-  .website {
-    display: flex;
-    justify-content: center;
-  }
+    .website {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -127,13 +127,17 @@
 }
 
 .paper-plane {
-    @include sm {
+    @include xl {
         display: none;
+    }
+    @include sxs {
+        top: 113%;
+        left: 3%;
     }
     height: 60px;
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 70%;
+    left: 15%;
 }
 
 .form-container {

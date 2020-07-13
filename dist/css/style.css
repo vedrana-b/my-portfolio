@@ -688,7 +688,10 @@ h6 {
     .portfolio__thumb--react {
       background-image: url("../img/react-todo.jpg");
       background-size: cover;
-      background-position-x: -64px; }
+      background-position-x: -4rem; }
+    .portfolio__thumb--forum {
+      background-image: url("../img/forum.png");
+      background-size: cover; }
     .portfolio__thumb--minimo {
       background-image: url("../img/minimo.jpg");
       background-size: contain; }
@@ -851,6 +854,19 @@ h6 {
     background: #151515; }
   .button:focus {
     background: #090909; }
+  .button--sent {
+    background-color: #77DD77; }
+    .button--sent:focus {
+      background: #4ed34e; }
+    .button--sent:hover {
+      background: #63d863; }
+  .button--not-sent {
+    background-color: #d3260b;
+    width: 380px; }
+    .button--not-sent:focus {
+      background: #a31d08; }
+    .button--not-sent:hover {
+      background: #bb220a; }
 
 .button[disabled] {
   background-color: #77DD77;
@@ -859,6 +875,9 @@ h6 {
     background: #4ed34e; }
   .button[disabled]:hover {
     background: #63d863; }
+
+.error {
+  display: none; }
 
 .contact__main {
   margin-bottom: 8rem; }
@@ -881,29 +900,15 @@ h6 {
 .paper-plane {
   height: 60px;
   position: absolute;
-  top: 50%;
-  left: 0; }
-  @media (max-width: 639px) {
+  top: 70%;
+  left: 15%; }
+  @media (max-width: 1200px) {
     .paper-plane {
       display: none; } }
-
-.error {
-  display: none; }
-
-.sent {
-  background-color: #77DD77; }
-  .sent:focus {
-    background: #4ed34e; }
-  .sent:hover {
-    background: #63d863; }
-
-.not-sent {
-  background-color: #d3260b;
-  width: 380px; }
-  .not-sent:focus {
-    background: #a31d08; }
-  .not-sent:hover {
-    background: #bb220a; }
+  @media (max-width: 420px) {
+    .paper-plane {
+      top: 113%;
+      left: 3%; } }
 
 .form-container {
   display: flex;
