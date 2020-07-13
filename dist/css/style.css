@@ -592,6 +592,12 @@ h6 {
   margin-top: 48px;
   margin-bottom: 48px; }
 
+.github-link {
+  font-size: 10px;
+  padding-top: 2px; }
+  .github-link:hover {
+    color: #0e4b73; }
+
 .footer {
   border-top: 1px solid #f0f0f0;
   margin: 7rem 0 0;
@@ -726,7 +732,8 @@ h6 {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 100%; }
     .portfolio__item h2 {
       color: #fff; }
 
@@ -752,6 +759,9 @@ h6 {
   .website {
     display: flex;
     justify-content: center; } }
+
+.website {
+  text-align: center; }
 
 .about {
   padding-top: 2rem; }

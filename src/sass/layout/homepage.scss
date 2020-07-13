@@ -76,3 +76,11 @@ h6 {
     margin-top: 48px;
     margin-bottom: 48px;
 }
+
+.github-link {
+    font-size: 10px;
+    padding-top: 2px;
+    &:hover {
+        color: darken($color: #1468a0, $amount: 10);
+    }
+}
