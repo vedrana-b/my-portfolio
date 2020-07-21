@@ -26,11 +26,14 @@
             width: 310px;
         }
         @include sm {
+            width: 100%;
+        }
+        /*@include sm {
             width: 368px;
         }
         @include xs {
             width: 310px;
-        }
+        }*/
         height: 242px;
         width: 369px;
         position: relative;
@@ -40,6 +43,11 @@
             background-image: url("../img/react-todo.jpg");
             background-size: cover;
             background-position-x: -4rem;
+        }
+        &--signup {
+            background-image: url("../img/signup-form.png");
+            background-size: cover;
+            background-position-x: center;
         }
         &--forum {
             background-image: url("../img/forum.png");
@@ -119,6 +127,13 @@
     .website {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+    }
+}
+@include sm {
+    .website {
+        display: flex;
+        flex-direction: column;
     }
 }
 

@@ -595,6 +595,9 @@ h6 {
 .github-link {
   font-size: 10px;
   padding-top: 2px; }
+  @media (max-width: 768px) {
+    .github-link {
+      padding-top: .500rem; } }
   .github-link:hover {
     color: #0e4b73; }
 
@@ -674,6 +677,12 @@ h6 {
     .portfolio__overlay:hover {
       opacity: 0.9; }
   .portfolio__thumb {
+    /*@include sm {
+            width: 368px;
+        }
+        @include xs {
+            width: 310px;
+        }*/
     height: 242px;
     width: 369px;
     position: relative;
@@ -687,14 +696,15 @@ h6 {
         width: 310px; } }
     @media (max-width: 639px) {
       .portfolio__thumb {
-        width: 368px; } }
-    @media (max-width: 321px) {
-      .portfolio__thumb {
-        width: 310px; } }
+        width: 100%; } }
     .portfolio__thumb--react {
       background-image: url("../img/react-todo.jpg");
       background-size: cover;
       background-position-x: -4rem; }
+    .portfolio__thumb--signup {
+      background-image: url("../img/signup-form.png");
+      background-size: cover;
+      background-position-x: center; }
     .portfolio__thumb--forum {
       background-image: url("../img/forum.png");
       background-size: cover; }
@@ -758,7 +768,13 @@ h6 {
 @media (max-width: 768px) {
   .website {
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    flex-direction: column; } }
+
+@media (max-width: 639px) {
+  .website {
+    display: flex;
+    flex-direction: column; } }
 
 .website {
   text-align: center; }

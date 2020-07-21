@@ -78,6 +78,9 @@ h6 {
 }
 
 .github-link {
+    @include md {
+        padding-top: .500rem;
+    }
     font-size: 10px;
     padding-top: 2px;
     &:hover {
